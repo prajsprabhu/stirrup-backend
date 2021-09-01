@@ -1,0 +1,37 @@
+{ Error: user validation failed: contact: Cast to Number failed for value "as" (type string) at path "contact"
+    at ValidationError.inspect (/home/nrithi/projects/hilltop/node_modules/mongoose/lib/error/validation.js:47:26)
+    at formatValue (internal/util/inspect.js:491:31)
+    at inspect (internal/util/inspect.js:189:10)
+    at Object.formatWithOptions (util.js:84:12)
+    at Console.(anonymous function) (console.js:191:15)
+    at Console.log (console.js:202:31)
+    at /home/nrithi/projects/hilltop/routes/users.js:21:13
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+  errors:
+   { contact:
+      { CastError: Cast to Number failed for value "as" (type string) at path "contact"
+          at SchemaNumber.cast (/home/nrithi/projects/hilltop/node_modules/mongoose/lib/schema/number.js:373:11)
+          at SchemaNumber.SchemaType.applySetters (/home/nrithi/projects/hilltop/node_modules/mongoose/lib/schematype.js:1123:12)
+          at model.$set (/home/nrithi/projects/hilltop/node_modules/mongoose/lib/document.js:1284:20)
+          at model.set [as contact] (/home/nrithi/projects/hilltop/node_modules/mongoose/lib/helpers/document/compile.js:179:19)
+          at /home/nrithi/projects/hilltop/routes/users.js:14:18
+          at Layer.handle [as handle_request] (/home/nrithi/projects/hilltop/node_modules/express/lib/router/layer.js:95:5)
+          at next (/home/nrithi/projects/hilltop/node_modules/express/lib/router/route.js:137:13)
+          at Route.dispatch (/home/nrithi/projects/hilltop/node_modules/express/lib/router/route.js:112:3)
+          at Layer.handle [as handle_request] (/home/nrithi/projects/hilltop/node_modules/express/lib/router/layer.js:95:5)
+          at /home/nrithi/projects/hilltop/node_modules/express/lib/router/index.js:281:22
+          at Function.process_params (/home/nrithi/projects/hilltop/node_modules/express/lib/router/index.js:335:12)
+          at next (/home/nrithi/projects/hilltop/node_modules/express/lib/router/index.js:275:10)
+          at Function.handle (/home/nrithi/projects/hilltop/node_modules/express/lib/router/index.js:174:3)
+          at router (/home/nrithi/projects/hilltop/node_modules/express/lib/router/index.js:47:12)
+          at Layer.handle [as handle_request] (/home/nrithi/projects/hilltop/node_modules/express/lib/router/layer.js:95:5)
+          at trim_prefix (/home/nrithi/projects/hilltop/node_modules/express/lib/router/index.js:317:13)
+        stringValue: '"as"',
+        messageFormat: undefined,
+        kind: 'Number',
+        value: 'as',
+        path: 'contact',
+        reason: [AssertionError],
+        valueType: 'string' } },
+  _message: 'user validation failed' }
+
